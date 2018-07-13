@@ -2,21 +2,21 @@
 
 
 [[projects]]
-  branch = "master"
   name = "github.com/go-sql-driver/mysql"
   packages = ["."]
-  revision = "749ddf1598b47e3cd909414bda735fe790ef3d30"
+  revision = "d523deb1b23d913de5bdada721a6071e71283618"
+  version = "v1.4.0"
 
 [[projects]]
-  name = "github.com/golang-migrate/migrate"
+  name = "github.com/mattes/migrate"
   packages = [
     ".",
     "database",
     "database/mysql",
     "source"
   ]
-  revision = "bcd996f3df28363f43e2d0935484c4559537a3eb"
-  version = "v3.3.0"
+  revision = "035c07716cd373d88456ec4d701402df52584cb4"
+  version = "v3.0.1"
 
 [[projects]]
   name = "google.golang.org/appengine"
@@ -27,6 +27,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5433aaf23bb9165d3b6e9bd9564946d3e788a94ba535e2d69035cdb2a38b3fec"
+  inputs-digest = "11b77d2d6b2c06122125e448284ac7e28bb72ed111ce5588c064c19b37236d63"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -26,8 +26,8 @@
 
 
 [[constraint]]
-  name = "github.com/golang-migrate/migrate"
-  version = "3.3.0"
+  name = "github.com/mattes/migrate"
+  version = "3.0.1"
 
 [prune]
   go-tests = true

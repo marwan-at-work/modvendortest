@@ -87,7 +87,7 @@ func Open(url string) (Driver, error) {
 	d, ok := drivers[u.Scheme]
 	driversMu.RUnlock()
 	if !ok {
-		return nil, fmt.Errorf("source driver: unknown driver %v (forgotten import?)", u.Scheme)
+		return nil, fmt.Errorf("source driver: unknown driver %v (forgotton import?)", u.Scheme)
 	}
 
 	return d.Open(url)
@@ -104,15 +104,4 @@ func Register(name string, driver Driver) {
 		panic("Register called twice for driver " + name)
 	}
 	drivers[name] = driver
-}
-
-// List lists the registered drivers
-func List() []string {
-	driversMu.RLock()
-	defer driversMu.RUnlock()
-	names := make([]string, 0, len(drivers))
-	for n := range drivers {
-		names = append(names, n)
-	}
-	return names
 }
